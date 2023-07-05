@@ -23,7 +23,8 @@ MAI-GitLab нам необходим для того, чтобы показат�
 ```
 git checkout main
 git pull origin main
-git tag -a v0.1.0 -m "Project passport"
+git tag -a v0.1.0 -m "Project beginning"
+git tag -a passport-v0.1.0 -m "Passport version"
 git push --tags
 ```
 4. Клонировать ветку `main` в ветку `develop`
