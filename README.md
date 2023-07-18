@@ -92,34 +92,40 @@ git push --tags
 ```
 git push origin -d pre-release-<#>
 ```
-19. Клонировать ветку `main` в ветку `pre-production`
+19. Влить ветку `main` в ветку `develop`
+```
+git checkout develop
+git merge --no-ff main
+git push origin develop
+```
+20. Клонировать ветку `main` в ветку `pre-production`
 ```
 git checkout -b pre-production main
 git push origin pre-production
 ```
-20. Создать тег `v1.0.0-alpha` в ветке `pre-production`
+21. Создать тег `v1.0.0-alpha` в ветке `pre-production`
 ```
 git checkout pre-production
 git tag -a v1.0.0-alpha -m "Tester testing"
 git push --tags
 ```
-21. Клонировать ветку `pre-production` в ветку `production`
+22. Клонировать ветку `pre-production` в ветку `production`
 ```
 git checkout -b production pre-production
 git push origin production
 ```
-22. Создать тег `v1.0.0-beta` в ветке `production`
+23. Создать тег `v1.0.0-beta` в ветке `production`
 ```
 git checkout production
 git tag -a v1.0.0-beta -m "Public testing"
 git push --tags
 ```
-23. Клонировать ветку `production` в ветку `release`
+24. Клонировать ветку `production` в ветку `release`
 ```
 git checkout -b release production
 git push origin release
 ```
-24. Создать тег `1` в ветке `release`
+25. Создать тег `1` в ветке `release`
 ```
 git checkout release
 git tag -a 1 -m "Official release"
