@@ -19,11 +19,10 @@ MAI-GitLab нам необходим для того, чтобы показат�
 
 1. Создать ветку `main` в GitHub (создать новый пустой репозиторий проекта)
 2. Заполнить паспорт проекта в файле `README.md`
-3. Создать тег `v0.1.0` в ветке `main`
+3. Создать тег `passport-v0.1.0` в ветке `main`
 ```
 git checkout main
 git pull origin main
-git tag -a v0.1.0 -m "Project beginning"
 git tag -a passport-v0.1.0 -m "Passport version"
 git push --tags
 ```
@@ -82,10 +81,10 @@ git pull
 git merge --no-ff pre-release-<#>
 git push
 ```
-17. Создать тег `v0.2.0` в ветке `main`
+17. Создать тег `v0.1.0` в ветке `main`
 ```
 git checkout main
-git tag -a v0.2.0 -m "Playable concept"
+git tag -a v0.1.0 -m "Playable concept"
 git push --tags
 ```
 18. Удалить ветку `pre-release-<#>`
